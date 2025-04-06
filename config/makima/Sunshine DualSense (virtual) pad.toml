@@ -1,0 +1,18 @@
+# Makima config for Gamepad D-PAD to Arrow Key mapping
+
+# Map D-PAD Up to Keyboard Arrow Up
+[remap]
+BTN_DPAD_UP = ["KEY_UP"]
+BTN_DPAD_LEFT = ["KEY_LEFT"]
+BTN_DPAD_RIGHT = ["KEY_RIGHT"]
+BTN_DPAD_DOWN = ["KEY_DOWN"]
+
+BTN_EAST = ["KEY_ESC"]
+BTN_SOUTH = ["KEY_ENTER"]
+
+[settings]
+# Set GRAB_DEVICE = true if you don't want the original D-PAD events
+# potentially interfering with other applications (like games).
+# Set to false if other apps need the original D-PAD events.
+# Setting to false initially is safer for testing.
+GRAB_DEVICE = "false"

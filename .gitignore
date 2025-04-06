@@ -1,0 +1,4 @@
+config/sunshine
+!config/sunshine/apps.json
+!config/sunshine/sunshine.conf
+home/

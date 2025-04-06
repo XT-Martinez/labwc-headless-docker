@@ -1,0 +1,31 @@
+#!/bin/sh
+
+/usr/lib/xdg-desktop-portal-wlr &
+
+swaybg -i ~/Wallpapers/Twilight.png -m fill &
+
+# Launch sfwbar
+sfwbar &
+
+# Launch Waybar
+# waybar &
+
+mako --default-timeout 3000 --ignore-timeout 1 --icons 1 --font "Adwaita Mono" &
+
+# Launch Network Manager applet (for tray icon)
+# Ensure NetworkManager service is running in the container
+
+nm-applet --indicator &
+
+# Set GTK theme (redundant if set via ENV, but good practice)
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Adwaita'
+
+# Set cursor theme (optional)
+# export XCURSOR_THEME=Adwaita
+# export XCURSOR_SIZE=24
+
+# Start xdg-desktop-portal-wlr (needed for screen sharing, etc.)
+
+# Allow dbus activation
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc &

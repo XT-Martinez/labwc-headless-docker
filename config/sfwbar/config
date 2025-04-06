@@ -1,0 +1,43 @@
+# Sfwbar configuration file
+
+# General settings
+dock_position = bottom
+dock_alignment = center
+dock_width = 0.8 # Percentage of screen width
+dock_height = 48
+icon_size = 32
+margin_left = 0
+margin_right = 0
+margin_top = 0
+margin_bottom = 0
+background_color = "#2E3440" # Polar Night Base
+icon_color = "#D8DEE9" # Snow Storm Text
+icon_hover_color = "#8FBCBB" # Frost Accent
+icon_padding = 5
+border_width = 0
+border_color = "#000000"
+hide_if_empty = false
+enable_scroll = false
+scroll_speed = 10
+wrap_icons = true
+
+# Icon settings
+show_icon_name = false
+icon_name_color = "#D8DEE9" # Snow Storm Text
+icon_name_font = "sans"
+icon_name_size = 10
+
+# Application settings
+terminal = "kitty"
+file_manager = "thunar"
+
+# Custom application launchers (optional)
+#[[applications]]
+#name = "Firefox"
+#icon = "/path/to/firefox.png"
+#command = "firefox"
+
+#[[applications]]
+#name = "Chromium"
+#icon = "/path/to/chromium.png"
+#command = "chromium"

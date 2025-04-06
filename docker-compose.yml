@@ -1,0 +1,60 @@
+
+services:
+  labwc-sunshine:
+    build: .
+    container_name: labwc-sunshine-container
+    restart: unless-stopped
+    # Send SIGINT first for potentially cleaner shutdown
+    stop_signal: SIGINT
+
+    group_add:
+      - input
+      - 104 # Should be the value of $(getent group input | cut -d: -f3) on the host
+
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+      - SYS_NICE
+      - MKNOD
+      # - SYS_ADMIN
+      # - SYS_PTRACE
+
+    security_opt:
+     - seccomp:unconfined
+
+    shm_size: '2gb'
+
+    devices:
+      - /dev/dri:/dev/dri
+      - /dev/uinput:/dev/uinput
+      - /dev/uhid:/dev/uhid
+
+    tty: true
+
+    device_cgroup_rules:
+      - 'c 13:* rwm'  # Input devices (event*, mice, etc.)
+      - 'c 244:* rwm' # Render nodes (DRM) - Changed 'rmw' to 'rwm' for consistency, check if needed
+      # - 'c <iio_major>:* rwm' # Add rule for IIO device major number if needed
+
+    volumes:
+      - ./home/:/home/appuser/:z
+      - ./config/sunshine:/home/appuser/.config/sunshine:z
+      - ./config/labwc:/home/appuser/.config/labwc:z
+      - ./config/waybar:/home/appuser/.config/waybar:z
+      - ./config/makima:/home/appuser/.config/makima:z
+      - ./config/sfwbar:/home/appuser/.config/sfwbar:z
+      - ./config/wireplumber:/home/appuser/.config/wireplumber:z
+      - /mnt/DATA/Games:/mnt/DATA/Games:z
+
+    ports:
+      - "5900:5900"
+      - "47984-47990:47984-47990/tcp"
+      - "48010:48010"
+      - "47998-48000:47998-48000/udp"
+
+    hostname: arch-labwc-headless
+
+    environment:
+      - ELECTRON_OZONE_PLATFORM_HINT=wayland
+
+    user: "1000:1000"

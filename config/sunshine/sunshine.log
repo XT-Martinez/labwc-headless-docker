@@ -1,0 +1,368 @@
+[2025-04-04 04:26:47.537]: Info: Sunshine version: v2025.122.141614
+[2025-04-04 04:26:47.537]: Info: Package Publisher: LizardByte
+[2025-04-04 04:26:47.537]: Info: Publisher Website: https://app.lizardbyte.dev
+[2025-04-04 04:26:47.537]: Info: Get support: https://app.lizardbyte.dev/support
+[2025-04-04 04:26:47.545]: Error: Couldn't load cuda: -1
+[2025-04-04 04:26:47.545]: Info: Found display [wayland-0]
+[2025-04-04 04:26:47.545]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:26:47.545]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:26:47.545]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:26:47.545]: Info: Resolution: 1280x720
+[2025-04-04 04:26:47.545]: Info: Name: HEADLESS-1
+[2025-04-04 04:26:47.545]: Info: Found monitor: Headless output 1
+[2025-04-04 04:26:47.545]: Info: Offset: 0x0
+[2025-04-04 04:26:47.545]: Info: Logical size: 1280x720
+[2025-04-04 04:26:47.545]: Info: -------- Start of Wayland monitor list --------
+[2025-04-04 04:26:47.545]: Info: Monitor 0 is HEADLESS-1: Headless output 1
+[2025-04-04 04:26:47.545]: Info: --------- End of Wayland monitor list ---------
+[2025-04-04 04:26:47.565]: Info: System tray created
+[2025-04-04 04:26:47.593]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-04-04 04:26:47.593]: Info: Trying encoder [nvenc]
+[2025-04-04 04:26:47.593]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:26:47.593]: Info: Found display [wayland-0]
+[2025-04-04 04:26:47.593]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:26:47.593]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:26:47.594]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:26:47.594]: Info: Resolution: 1280x720
+[2025-04-04 04:26:47.594]: Info: Name: HEADLESS-1
+[2025-04-04 04:26:47.594]: Info: Found monitor: Headless output 1
+[2025-04-04 04:26:47.594]: Info: Offset: 0x0
+[2025-04-04 04:26:47.594]: Info: Logical size: 1280x720
+[2025-04-04 04:26:47.594]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:26:47.594]: Info: Creating encoder [h264_nvenc]
+[2025-04-04 04:26:47.594]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:26:47.594]: Info: Color depth: 8-bit
+[2025-04-04 04:26:47.594]: Info: Color range: JPEG
+[2025-04-04 04:26:47.594]: Error: Couldn't load cuda: -1
+[2025-04-04 04:26:47.594]: Info: Creating encoder [h264_nvenc]
+[2025-04-04 04:26:47.594]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:26:47.594]: Info: Color depth: 8-bit
+[2025-04-04 04:26:47.594]: Info: Color range: JPEG
+[2025-04-04 04:26:47.594]: Error: Couldn't load cuda: -1
+[2025-04-04 04:26:47.594]: Info: Encoder [nvenc] failed
+[2025-04-04 04:26:47.594]: Info: Trying encoder [vaapi]
+[2025-04-04 04:26:47.594]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:26:47.594]: Info: Found display [wayland-0]
+[2025-04-04 04:26:47.594]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:26:47.594]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:26:47.594]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:26:47.594]: Info: Resolution: 1280x720
+[2025-04-04 04:26:47.594]: Info: Name: HEADLESS-1
+[2025-04-04 04:26:47.594]: Info: Found monitor: Headless output 1
+[2025-04-04 04:26:47.594]: Info: Offset: 0x0
+[2025-04-04 04:26:47.594]: Info: Logical size: 1280x720
+[2025-04-04 04:26:47.594]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:26:47.594]: Info: Creating encoder [h264_vaapi]
+[2025-04-04 04:26:47.594]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:26:47.594]: Info: Color depth: 8-bit
+[2025-04-04 04:26:47.594]: Info: Color range: JPEG
+[2025-04-04 04:26:47.717]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:26:47.717]: Info: Using normal encoding mode
+[2025-04-04 04:26:47.717]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:26:47.760]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:26:47.760]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:26:47.760]: Info: Color depth: 8-bit
+[2025-04-04 04:26:47.760]: Info: Color range: JPEG
+[2025-04-04 04:26:47.771]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:26:47.771]: Info: Using normal encoding mode
+[2025-04-04 04:26:47.771]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:26:47.820]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:26:47.820]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:26:47.820]: Info: Color depth: 8-bit
+[2025-04-04 04:26:47.820]: Info: Color range: JPEG
+[2025-04-04 04:26:47.829]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:26:47.829]: Info: Using normal encoding mode
+[2025-04-04 04:26:47.829]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:26:47.829]: Warning: [av1_vaapi @ 0x55b2d77f7cc0] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:26:47.860]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:26:47.860]: Info: Found display [wayland-0]
+[2025-04-04 04:26:47.860]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:26:47.860]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:26:47.860]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:26:47.860]: Info: Resolution: 1280x720
+[2025-04-04 04:26:47.860]: Info: Name: HEADLESS-1
+[2025-04-04 04:26:47.860]: Info: Found monitor: Headless output 1
+[2025-04-04 04:26:47.860]: Info: Offset: 0x0
+[2025-04-04 04:26:47.860]: Info: Logical size: 1280x720
+[2025-04-04 04:26:47.860]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:26:47.860]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:26:47.860]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:26:47.860]: Info: Color depth: 10-bit
+[2025-04-04 04:26:47.860]: Info: Color range: JPEG
+[2025-04-04 04:26:47.873]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:26:47.873]: Info: Using normal encoding mode
+[2025-04-04 04:26:47.873]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:26:47.920]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:26:47.920]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:26:47.920]: Info: Color depth: 10-bit
+[2025-04-04 04:26:47.920]: Info: Color range: JPEG
+[2025-04-04 04:26:47.929]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:26:47.929]: Info: Using normal encoding mode
+[2025-04-04 04:26:47.929]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:26:47.929]: Warning: [av1_vaapi @ 0x55b2d77f7cc0] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:26:47.960]: Info: 
+[2025-04-04 04:26:47.960]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-04-04 04:26:47.960]: Info: 
+[2025-04-04 04:26:47.960]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2025-04-04 04:26:47.961]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2025-04-04 04:26:47.961]: Info: Found AV1 encoder: av1_vaapi [vaapi]
+[2025-04-04 04:26:47.962]: Error: Failed to create client: Daemon not running
+[2025-04-04 04:26:47.962]: Info: Configuration UI available at [https://localhost:47990]
+[2025-04-04 04:28:25.587]: Warning: Sunshine is configured to change resolution automatically, but the "Optimize game settings" is not set in the client! Resolution will not be changed.
+[2025-04-04 04:28:25.587]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-04-04 04:28:25.587]: Info: Trying encoder [nvenc]
+[2025-04-04 04:28:25.587]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:28:25.587]: Info: Found display [wayland-0]
+[2025-04-04 04:28:25.587]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:28:25.587]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:28:25.587]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:28:25.588]: Info: Resolution: 1280x720
+[2025-04-04 04:28:25.588]: Info: Name: HEADLESS-1
+[2025-04-04 04:28:25.588]: Info: Found monitor: Headless output 1
+[2025-04-04 04:28:25.588]: Info: Offset: 0x0
+[2025-04-04 04:28:25.588]: Info: Logical size: 1280x720
+[2025-04-04 04:28:25.588]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:28:25.588]: Info: Creating encoder [h264_nvenc]
+[2025-04-04 04:28:25.588]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:28:25.588]: Info: Color depth: 8-bit
+[2025-04-04 04:28:25.588]: Info: Color range: JPEG
+[2025-04-04 04:28:25.588]: Error: Couldn't load cuda: -1
+[2025-04-04 04:28:25.588]: Info: Encoder [nvenc] failed
+[2025-04-04 04:28:25.588]: Info: Trying encoder [vaapi]
+[2025-04-04 04:28:25.588]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:28:25.588]: Info: Found display [wayland-0]
+[2025-04-04 04:28:25.588]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:28:25.588]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:28:25.588]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:28:25.588]: Info: Resolution: 1280x720
+[2025-04-04 04:28:25.588]: Info: Name: HEADLESS-1
+[2025-04-04 04:28:25.588]: Info: Found monitor: Headless output 1
+[2025-04-04 04:28:25.588]: Info: Offset: 0x0
+[2025-04-04 04:28:25.588]: Info: Logical size: 1280x720
+[2025-04-04 04:28:25.588]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:28:25.588]: Info: Creating encoder [h264_vaapi]
+[2025-04-04 04:28:25.588]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:28:25.588]: Info: Color depth: 8-bit
+[2025-04-04 04:28:25.588]: Info: Color range: JPEG
+[2025-04-04 04:28:25.604]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:25.604]: Info: Using normal encoding mode
+[2025-04-04 04:28:25.604]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:25.627]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:28:25.627]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:28:25.627]: Info: Color depth: 8-bit
+[2025-04-04 04:28:25.627]: Info: Color range: JPEG
+[2025-04-04 04:28:25.635]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:25.635]: Info: Using normal encoding mode
+[2025-04-04 04:28:25.635]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:25.680]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:28:25.680]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:28:25.680]: Info: Color depth: 8-bit
+[2025-04-04 04:28:25.680]: Info: Color range: JPEG
+[2025-04-04 04:28:25.688]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:25.688]: Info: Using normal encoding mode
+[2025-04-04 04:28:25.688]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:25.688]: Warning: [av1_vaapi @ 0x7f441004cf00] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:28:25.713]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:28:25.713]: Info: Found display [wayland-0]
+[2025-04-04 04:28:25.713]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:28:25.713]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:28:25.713]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:28:25.713]: Info: Resolution: 1280x720
+[2025-04-04 04:28:25.713]: Info: Name: HEADLESS-1
+[2025-04-04 04:28:25.713]: Info: Found monitor: Headless output 1
+[2025-04-04 04:28:25.713]: Info: Offset: 0x0
+[2025-04-04 04:28:25.713]: Info: Logical size: 1280x720
+[2025-04-04 04:28:25.713]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:28:25.713]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:28:25.713]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:28:25.713]: Info: Color depth: 10-bit
+[2025-04-04 04:28:25.713]: Info: Color range: JPEG
+[2025-04-04 04:28:25.722]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:25.722]: Info: Using normal encoding mode
+[2025-04-04 04:28:25.722]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:25.762]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:28:25.762]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:28:25.762]: Info: Color depth: 10-bit
+[2025-04-04 04:28:25.762]: Info: Color range: JPEG
+[2025-04-04 04:28:25.770]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:25.770]: Info: Using normal encoding mode
+[2025-04-04 04:28:25.770]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:25.770]: Warning: [av1_vaapi @ 0x7f441004cf00] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:28:25.798]: Info: 
+[2025-04-04 04:28:25.798]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-04-04 04:28:25.798]: Info: 
+[2025-04-04 04:28:25.798]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2025-04-04 04:28:25.798]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2025-04-04 04:28:25.801]: Info: Found AV1 encoder: av1_vaapi [vaapi]
+[2025-04-04 04:28:25.801]: Info: Executing Do Cmd: [sh -c "wlr-randr --output HEADLESS-1 --custom-mode \"${SUNSHINE_CLIENT_WIDTH}x${SUNSHINE_CLIENT_HEIGHT}@${SUNSHINE_CLIENT_FPS}Hz\""]
+[2025-04-04 04:28:25.813]: Info: Executing [Desktop]
+[2025-04-04 04:28:25.932]: Info: New streaming session started [active sessions: 1]
+[2025-04-04 04:28:26.299]: Info: CLIENT CONNECTED
+[2025-04-04 04:28:26.304]: Info: Found display [wayland-0]
+[2025-04-04 04:28:26.305]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:28:26.305]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:28:26.305]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:28:26.305]: Info: Resolution: 1554x1082
+[2025-04-04 04:28:26.305]: Info: Name: HEADLESS-1
+[2025-04-04 04:28:26.305]: Info: Found monitor: Headless output 1
+[2025-04-04 04:28:26.305]: Info: Offset: 0x0
+[2025-04-04 04:28:26.305]: Info: Logical size: 1554x1082
+[2025-04-04 04:28:26.305]: Info: -------- Start of Wayland monitor list --------
+[2025-04-04 04:28:26.305]: Info: Monitor 0 is HEADLESS-1: Headless output 1
+[2025-04-04 04:28:26.305]: Info: --------- End of Wayland monitor list ---------
+[2025-04-04 04:28:26.305]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:28:26.305]: Info: Found display [wayland-0]
+[2025-04-04 04:28:26.305]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:28:26.305]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:28:26.305]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:28:26.305]: Info: Resolution: 1554x1082
+[2025-04-04 04:28:26.305]: Info: Name: HEADLESS-1
+[2025-04-04 04:28:26.305]: Info: Found monitor: Headless output 1
+[2025-04-04 04:28:26.305]: Info: Offset: 0x0
+[2025-04-04 04:28:26.305]: Info: Logical size: 1554x1082
+[2025-04-04 04:28:26.305]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:28:26.305]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:28:26.305]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:28:26.305]: Info: Color depth: 8-bit
+[2025-04-04 04:28:26.305]: Info: Color range: MPEG
+[2025-04-04 04:28:26.319]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:28:26.319]: Info: Using normal encoding mode
+[2025-04-04 04:28:26.319]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:28:26.429]: Info: Setting default sink to: [sink-sunshine-stereo]
+[2025-04-04 04:28:26.430]: Info: Found default monitor by name: sink-sunshine-stereo.monitor
+[2025-04-04 04:28:26.445]: Info: Opus initialized: 48 kHz, 2 channels, 512 kbps (total), LOWDELAY
+[2025-04-04 04:29:06.409]: Info: Web UI: [10.89.1.1] -- not authorized
+[2025-04-04 04:29:09.581]: Info: Web UI: [10.89.1.1] -- not authorized
+[2025-04-04 04:33:36.757]: Info: CLIENT DISCONNECTED
+[2025-04-04 04:33:36.761]: Info: Setting default sink to: [auto_null]
+[2025-04-04 04:33:36.762]: Error: Couldn't set default-sink [auto_null]: No such entity
+[2025-04-04 04:34:02.672]: Warning: Sunshine is configured to change resolution automatically, but the "Optimize game settings" is not set in the client! Resolution will not be changed.
+[2025-04-04 04:34:02.672]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-04-04 04:34:02.672]: Info: Trying encoder [nvenc]
+[2025-04-04 04:34:02.672]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:34:02.673]: Info: Found display [wayland-0]
+[2025-04-04 04:34:02.673]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:34:02.674]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:34:02.674]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:34:02.674]: Info: Resolution: 1554x1082
+[2025-04-04 04:34:02.674]: Info: Name: HEADLESS-1
+[2025-04-04 04:34:02.674]: Info: Found monitor: Headless output 1
+[2025-04-04 04:34:02.674]: Info: Offset: 0x0
+[2025-04-04 04:34:02.674]: Info: Logical size: 1554x1082
+[2025-04-04 04:34:02.674]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:34:02.674]: Info: Creating encoder [h264_nvenc]
+[2025-04-04 04:34:02.674]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:34:02.674]: Info: Color depth: 8-bit
+[2025-04-04 04:34:02.674]: Info: Color range: JPEG
+[2025-04-04 04:34:02.674]: Error: Couldn't load cuda: -1
+[2025-04-04 04:34:02.674]: Info: Encoder [nvenc] failed
+[2025-04-04 04:34:02.674]: Info: Trying encoder [vaapi]
+[2025-04-04 04:34:02.674]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:34:02.674]: Info: Found display [wayland-0]
+[2025-04-04 04:34:02.674]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:34:02.674]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:34:02.674]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:34:02.675]: Info: Resolution: 1554x1082
+[2025-04-04 04:34:02.675]: Info: Name: HEADLESS-1
+[2025-04-04 04:34:02.675]: Info: Found monitor: Headless output 1
+[2025-04-04 04:34:02.675]: Info: Offset: 0x0
+[2025-04-04 04:34:02.675]: Info: Logical size: 1554x1082
+[2025-04-04 04:34:02.675]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:34:02.675]: Info: Creating encoder [h264_vaapi]
+[2025-04-04 04:34:02.675]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:34:02.675]: Info: Color depth: 8-bit
+[2025-04-04 04:34:02.675]: Info: Color range: JPEG
+[2025-04-04 04:34:02.686]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:02.686]: Info: Using normal encoding mode
+[2025-04-04 04:34:02.686]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:02.708]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:34:02.708]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:34:02.708]: Info: Color depth: 8-bit
+[2025-04-04 04:34:02.708]: Info: Color range: JPEG
+[2025-04-04 04:34:02.717]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:02.717]: Info: Using normal encoding mode
+[2025-04-04 04:34:02.717]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:02.760]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:34:02.760]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:34:02.760]: Info: Color depth: 8-bit
+[2025-04-04 04:34:02.760]: Info: Color range: JPEG
+[2025-04-04 04:34:02.768]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:02.768]: Info: Using normal encoding mode
+[2025-04-04 04:34:02.768]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:02.768]: Warning: [av1_vaapi @ 0x7f441004cf00] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:34:02.793]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:34:02.793]: Info: Found display [wayland-0]
+[2025-04-04 04:34:02.793]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:34:02.793]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:34:02.793]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:34:02.793]: Info: Resolution: 1554x1082
+[2025-04-04 04:34:02.793]: Info: Name: HEADLESS-1
+[2025-04-04 04:34:02.793]: Info: Found monitor: Headless output 1
+[2025-04-04 04:34:02.793]: Info: Offset: 0x0
+[2025-04-04 04:34:02.793]: Info: Logical size: 1554x1082
+[2025-04-04 04:34:02.793]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:34:02.793]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:34:02.793]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:34:02.793]: Info: Color depth: 10-bit
+[2025-04-04 04:34:02.793]: Info: Color range: JPEG
+[2025-04-04 04:34:02.801]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:02.801]: Info: Using normal encoding mode
+[2025-04-04 04:34:02.801]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:02.841]: Info: Creating encoder [av1_vaapi]
+[2025-04-04 04:34:02.841]: Info: Color coding: SDR (Rec. 709)
+[2025-04-04 04:34:02.841]: Info: Color depth: 10-bit
+[2025-04-04 04:34:02.841]: Info: Color range: JPEG
+[2025-04-04 04:34:02.848]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:02.848]: Info: Using normal encoding mode
+[2025-04-04 04:34:02.848]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:02.848]: Warning: [av1_vaapi @ 0x7f441004cf00] Multiple slices were requested but this codec does not support controlling slices.
+[2025-04-04 04:34:02.878]: Info: 
+[2025-04-04 04:34:02.878]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-04-04 04:34:02.878]: Info: 
+[2025-04-04 04:34:02.878]: Info: Found H.264 encoder: h264_vaapi [vaapi]
+[2025-04-04 04:34:02.878]: Info: Found HEVC encoder: hevc_vaapi [vaapi]
+[2025-04-04 04:34:02.878]: Info: Found AV1 encoder: av1_vaapi [vaapi]
+[2025-04-04 04:34:02.983]: Info: New streaming session started [active sessions: 1]
+[2025-04-04 04:34:03.010]: Info: CLIENT CONNECTED
+[2025-04-04 04:34:03.018]: Info: Found display [wayland-0]
+[2025-04-04 04:34:03.018]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:34:03.018]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:34:03.018]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:34:03.018]: Info: Resolution: 1554x1082
+[2025-04-04 04:34:03.018]: Info: Name: HEADLESS-1
+[2025-04-04 04:34:03.018]: Info: Found monitor: Headless output 1
+[2025-04-04 04:34:03.018]: Info: Offset: 0x0
+[2025-04-04 04:34:03.018]: Info: Logical size: 1554x1082
+[2025-04-04 04:34:03.018]: Info: -------- Start of Wayland monitor list --------
+[2025-04-04 04:34:03.018]: Info: Monitor 0 is HEADLESS-1: Headless output 1
+[2025-04-04 04:34:03.018]: Info: --------- End of Wayland monitor list ---------
+[2025-04-04 04:34:03.018]: Info: Screencasting with Wayland's protocol
+[2025-04-04 04:34:03.018]: Info: Found display [wayland-0]
+[2025-04-04 04:34:03.018]: Info: Found interface: zxdg_output_manager_v1(7) version 3
+[2025-04-04 04:34:03.018]: Info: Found interface: zwlr_export_dmabuf_manager_v1(25) version 1
+[2025-04-04 04:34:03.018]: Info: Found interface: wl_output(48) version 4
+[2025-04-04 04:34:03.018]: Info: Resolution: 1554x1082
+[2025-04-04 04:34:03.018]: Info: Name: HEADLESS-1
+[2025-04-04 04:34:03.018]: Info: Found monitor: Headless output 1
+[2025-04-04 04:34:03.018]: Info: Offset: 0x0
+[2025-04-04 04:34:03.018]: Info: Logical size: 1554x1082
+[2025-04-04 04:34:03.018]: Info: Selected monitor [Headless output 1] for streaming
+[2025-04-04 04:34:03.018]: Info: Creating encoder [hevc_vaapi]
+[2025-04-04 04:34:03.018]: Info: Color coding: SDR (Rec. 601)
+[2025-04-04 04:34:03.018]: Info: Color depth: 8-bit
+[2025-04-04 04:34:03.018]: Info: Color range: MPEG
+[2025-04-04 04:34:03.036]: Info: vaapi vendor: Intel iHD driver for Intel(R) Gen Graphics - 25.1.4 ()
+[2025-04-04 04:34:03.036]: Info: Using normal encoding mode
+[2025-04-04 04:34:03.036]: Info: Using VBR with single frame VBV size
+[2025-04-04 04:34:03.197]: Info: Gamepad 0 will be DualSense 5 controller (manual selection)
+[2025-04-04 04:34:03.198]: Warning: Gamepad 0 is emulating a DualShock 5 controller, but the client gamepad doesn't have a touchpad
+[2025-04-04 04:34:03.479]: Info: Setting default sink to: [sink-sunshine-stereo]
+[2025-04-04 04:34:03.479]: Info: Found default monitor by name: sink-sunshine-stereo.monitor
+[2025-04-04 04:34:03.492]: Info: Opus initialized: 48 kHz, 2 channels, 512 kbps (total), LOWDELAY
+[2025-04-04 05:08:50.578]: Warning: ControllerNumber already allocated [ ]
+[2025-04-04 05:08:50.673]: Warning: ControllerNumber [ ] not allocated
+[2025-04-04 05:08:50.673]: Warning: ControllerNumber [0] not allocated
+[2025-04-04 05:08:50.673]: Info: Gamepad 0 will be DualSense 5 controller (manual selection)
+[2025-04-04 05:08:50.673]: Warning: Gamepad 0 is emulating a DualShock 5 controller, but the client gamepad doesn't have a touchpad
+[2025-04-04 05:08:50.673]: Warning: ControllerNumber [ ] not allocated
+[2025-04-04 05:08:50.673]: Warning: ControllerNumber [0] not allocated

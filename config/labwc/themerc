@@ -1,0 +1,39 @@
+# Labwc Dark Theme
+
+# Window Decoration
+window.border.width: 1
+window.border.color: #303030
+window.title.height: 24
+window.title.padding: 5
+
+# Active Window
+window.active.title.bg.color: #404040
+window.active.text.color: #FFFFFF
+window.active.border.color: #505050
+window.active.button.unfocused.image: #404040
+window.active.button.focused.image: #606060
+window.active.button.pressed.image: #707070
+
+# Inactive Window
+window.inactive.title.bg.color: #202020
+window.inactive.text.color: #AAAAAA
+window.inactive.border.color: #303030
+window.inactive.button.unfocused.image: #202020
+window.inactive.button.focused.image: #202020
+window.inactive.button.pressed.image: #202020
+
+# Menu
+menu.border.width: 1
+menu.border.color: #303030
+menu.title.bg.color: #404040
+menu.title.text.color: #FFFFFF
+menu.items.bg.color: #202020
+menu.items.text.color: #FFFFFF
+menu.items.active.bg.color: #505050
+menu.items.active.text.color: #FFFFFF
+
+# On-Screen Display (OSD)
+osd.bg.color: #202020
+osd.text.color: #FFFFFF
+osd.border.color: #303030
+osd.border.width: 1
