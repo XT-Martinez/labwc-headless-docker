@@ -1,0 +1,5 @@
+# sudo vi /etc/udev/rules.d/85-sunshine.rules
+KERNEL=="uinput", SUBSYSTEM=="misc", MODE="0660", GROUP="input", OPTIONS+="static_node=uinput", TAG+="uaccess"
+KERNEL=="uhid", TAG+="uaccess"
+
+SUBSYSTEM=="input", ATTR{name}=="Keyboard passthrough|Mouse passthrough|Wolf mouse (abs) virtual device|Touch passthrough|Pen passthrough|Sunshine Nintendo (virtual) pad|Sunshine X-Box One (virtual) pad|Sunshine DualSense (virtual) pad|Sunshine DualSense (virtual) pad Motion Sensors|Sunshine DualSense (virtual) pad Touchpad|Makima Virtual Keyboard/Mouse", MODE="0660", GROUP="input", ENV{ID_SEAT}="seat9"
