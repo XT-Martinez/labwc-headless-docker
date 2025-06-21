@@ -48,7 +48,7 @@ USER root
 # Update system and install necessary packages
 RUN pacman -S --noconfirm --needed \
         # labwc and Wayland essentials
-        labwc wlroots xorg-xwayland wlr-randr \
+        labwc xorg-xwayland wlr-randr \
         wayland \
         wayland-protocols \
         xdg-desktop-portal-wlr \
