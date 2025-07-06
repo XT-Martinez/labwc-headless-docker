@@ -1,7 +1,5 @@
-config/sunshine
+config/sunshine/*
 !config/sunshine/apps.json
 !config/sunshine/sunshine.conf
 home/
 .Dockerfile*
-config/sunshine/sunshine_state.json
-config/sunshine/sunshine.log
