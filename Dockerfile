@@ -2,9 +2,9 @@
 FROM archlinux:latest
 
 RUN echo -e '\n\
-[lizardbyte] \n\
+[lizardbyte-beta] \n\
 SigLevel = Optional \n\
-Server = https://github.com/LizardByte/pacman-repo/releases/latest/download \n\
+Server = https://github.com/LizardByte/pacman-repo/releases/download/beta \n\
 \n\
 [multilib] \n\
 Include = /etc/pacman.d/mirrorlist \n\

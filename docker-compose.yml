@@ -44,7 +44,7 @@ services:
       - ./config/makima:/home/appuser/.config/makima:z
       - ./config/sfwbar:/home/appuser/.config/sfwbar:z
       - ./config/wireplumber:/home/appuser/.config/wireplumber:z
-      - /mnt/DATA/Games:/mnt/DATA/Games:z
+      - /mnt/DATA/:/mnt/DATA/:z
 
     ports:
       - "5900:5900"

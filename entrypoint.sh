@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e # Exit immediately if a command exits with a non-zero status.
 
+# Temporary workaround until https://github.com/LizardByte/pacman-repo/issues/39 is in stable repo
+sudo ln -s /usr/lib/libminiupnpc.so.21 /usr/lib/libminiupnpc.so.19
+
 # Start fake udev daemon
 sudo -E /usr/bin/start-fake-udev &
 FAKEUDEV_PID=$!
