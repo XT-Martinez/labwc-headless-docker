@@ -57,6 +57,7 @@ services:
 
     environment:
       - ELECTRON_OZONE_PLATFORM_HINT=wayland
+      - WLR_RENDERER=gles2
       # - DEBUG=1
 
     user: "1000:1000"

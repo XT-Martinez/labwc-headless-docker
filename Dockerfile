@@ -68,7 +68,7 @@ RUN pacman -S --noconfirm --needed \
     # Utilities
     mesa inetutils xdg-utils thunar curl 7zip unzip zip cabextract zenity file-roller \
     # Graphics drivers (Mesa for software/headless rendering)
-    libva-mesa-driver vulkan-intel vulkan-icd-loader \
+    libva-mesa-driver vulkan-intel vulkan-radeon vulkan-icd-loader \
     vulkan-mesa-layers vulkan-tools \
     # Intel media driver for hardware-accelerated video decoding
     intel-media-driver libva-utils \
@@ -81,9 +81,10 @@ RUN pacman -S --noconfirm --needed \
     lib32-libva-mesa-driver \
     lib32-mesa-utils \
     lib32-mesa \
+    lib32-vulkan-radeon \
     lib32-vulkan-intel \
-    lib32-vulkan-mesa-layers \
     libva-intel-driver \
+    lib32-vulkan-mesa-layers \
     libva-utils \
     mesa \
     lib32-gcc-libs \
