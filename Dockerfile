@@ -2,13 +2,13 @@
 FROM archlinux:latest
 
 RUN echo -e '\n\
-[lizardbyte-beta] \n\
-SigLevel = Optional \n\
-Server = https://github.com/LizardByte/pacman-repo/releases/download/beta \n\
-\n\
-[multilib] \n\
-Include = /etc/pacman.d/mirrorlist \n\
-' >> /etc/pacman.conf
+    [lizardbyte] \n\
+    SigLevel = Optional \n\
+    Server = https://github.com/LizardByte/pacman-repo/releases/latest/download/ \n\
+    \n\
+    [multilib] \n\
+    Include = /etc/pacman.d/mirrorlist \n\
+    ' >> /etc/pacman.conf
 
 ENV XDG_RUNTIME_DIR=/run/user/1000
 
@@ -47,51 +47,51 @@ USER root
 
 # Update system and install necessary packages
 RUN pacman -S --noconfirm --needed \
-        # labwc and Wayland essentials
-        labwc xorg-xwayland wlr-randr \
-        wayland \
-        wayland-protocols \
-        xdg-desktop-portal-wlr \
-        wayvnc \
-        # Sunshine and dependencies
-        sunshine \
-        # Audio
-        pipewire pipewire-pulse wireplumber libpulse \
-        # Input and devices
-        libinput udev evtest \
-        # D-Bus
-        dbus dbus-broker \
-        # Fonts and basic terminal
-        ttf-dejavu adwaita-fonts ttf-font-awesome kitty \
-        # UI Components
-        waybar rofi-wayland networkmanager swaybg mako \
-        # Utilities
-        mesa inetutils xdg-utils thunar curl 7zip unzip zip cabextract zenity file-roller \
-        # Graphics drivers (Mesa for software/headless rendering)
-        libva-mesa-driver vulkan-intel vulkan-icd-loader \
-        vulkan-mesa-layers vulkan-tools \
-        # Intel media driver for hardware-accelerated video decoding
-        intel-media-driver libva-utils \
-        # Gaming deps
-        mangohud lib32-mangohud gamescope gamemode lib32-gamemode fuse2 wine-staging \
-        # 32-bit libraries
-        lib32-glibc lib32-sdl2-compat \
-        lib32-freetype2 \
-        lib32-libva-intel-driver \
-        lib32-libva-mesa-driver \
-        lib32-mesa-utils \
-        lib32-mesa \
-        lib32-vulkan-intel \
-        lib32-vulkan-mesa-layers \
-        libva-intel-driver \
-        libva-utils \
-        mesa \
-        lib32-gcc-libs \
-        lib32-libpulse \
-        lib32-libunwind \
-        lib32-renderdoc-minimal \
-        # Apps
-        chromium
+    # labwc and Wayland essentials
+    labwc xorg-xwayland wlr-randr \
+    wayland \
+    wayland-protocols \
+    xdg-desktop-portal-wlr \
+    wayvnc \
+    # Sunshine and dependencies
+    sunshine \
+    # Audio
+    pipewire pipewire-pulse wireplumber libpulse \
+    # Input and devices
+    libinput udev evtest \
+    # D-Bus
+    dbus dbus-broker \
+    # Fonts and basic terminal
+    ttf-dejavu adwaita-fonts ttf-font-awesome kitty \
+    # UI Components
+    waybar rofi-wayland networkmanager swaybg mako \
+    # Utilities
+    mesa inetutils xdg-utils thunar curl 7zip unzip zip cabextract zenity file-roller \
+    # Graphics drivers (Mesa for software/headless rendering)
+    libva-mesa-driver vulkan-intel vulkan-icd-loader \
+    vulkan-mesa-layers vulkan-tools \
+    # Intel media driver for hardware-accelerated video decoding
+    intel-media-driver libva-utils \
+    # Gaming deps
+    mangohud lib32-mangohud gamescope gamemode lib32-gamemode fuse2 wine-staging \
+    # 32-bit libraries
+    lib32-glibc lib32-sdl2-compat \
+    lib32-freetype2 \
+    lib32-libva-intel-driver \
+    lib32-libva-mesa-driver \
+    lib32-mesa-utils \
+    lib32-mesa \
+    lib32-vulkan-intel \
+    lib32-vulkan-mesa-layers \
+    libva-intel-driver \
+    libva-utils \
+    mesa \
+    lib32-gcc-libs \
+    lib32-libpulse \
+    lib32-libunwind \
+    lib32-renderdoc-minimal \
+    # Apps
+    chromium
 
 RUN usermod -aG seat,input appuser
 
@@ -115,6 +115,7 @@ ENV XDG_SESSION_CLASS=user
 ENV XDG_SESSION_ID=1
 ENV LIBSEAT_BACKEND=seatd
 ENV WLR_BACKENDS=headless,libinput
+ENV WLR_RENDERER=vulkan
 ENV WLR_LIBINPUT_NO_DEVICES=1
 ENV XDG_CURRENT_DESKTOP=labwc
 ENV XDG_SESSION_DESKTOP=labwc

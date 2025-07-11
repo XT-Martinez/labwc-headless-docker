@@ -2,6 +2,7 @@
 services:
   labwc-sunshine:
     build: .
+    image: labwc
     container_name: labwc-sunshine-container
     restart: unless-stopped
     # Send SIGINT first for potentially cleaner shutdown
@@ -33,7 +34,7 @@ services:
 
     device_cgroup_rules:
       - 'c 13:* rwm'  # Input devices (event*, mice, etc.)
-      - 'c 244:* rwm' # Render nodes (DRM) - Changed 'rmw' to 'rwm' for consistency, check if needed
+      #- 'c 244:* rwm' # Render nodes (DRM) - Changed 'rmw' to 'rwm' for consistency, check if needed
       # - 'c <iio_major>:* rwm' # Add rule for IIO device major number if needed
 
     volumes:
@@ -56,5 +57,6 @@ services:
 
     environment:
       - ELECTRON_OZONE_PLATFORM_HINT=wayland
+      # - DEBUG=1
 
     user: "1000:1000"
