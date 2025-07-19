@@ -2,9 +2,9 @@
 FROM archlinux:latest
 
 RUN echo -e '\n\
-    [lizardbyte] \n\
+    [lizardbyte-beta] \n\
     SigLevel = Optional \n\
-    Server = https://github.com/LizardByte/pacman-repo/releases/latest/download/ \n\
+    Server = https://github.com/LizardByte/pacman-repo/releases/download/beta \n\
     \n\
     [multilib] \n\
     Include = /etc/pacman.d/mirrorlist \n\
@@ -46,11 +46,13 @@ RUN paru -S --noconfirm heroic-games-launcher-bin sfwbar lisgd
 USER root
 
 # Update system and install necessary packages
-RUN pacman -S --noconfirm --needed \
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm --needed \
     # labwc and Wayland essentials
     labwc xorg-xwayland wlr-randr \
     wayland \
     wayland-protocols \
+    xdg-desktop-portal xdg-desktop-portal-gtk \
     xdg-desktop-portal-wlr \
     wayvnc \
     # Sunshine and dependencies
@@ -62,23 +64,26 @@ RUN pacman -S --noconfirm --needed \
     # D-Bus
     dbus dbus-broker \
     # Fonts and basic terminal
-    ttf-dejavu adwaita-fonts ttf-font-awesome kitty \
+    ttf-dejavu adwaita-fonts ttf-font-awesome alacritty \
     # UI Components
     waybar rofi-wayland networkmanager swaybg mako \
     # Utilities
     mesa inetutils xdg-utils thunar curl 7zip unzip zip cabextract zenity file-roller \
     # Graphics drivers (Mesa for software/headless rendering)
-    libva-mesa-driver vulkan-intel vulkan-radeon vulkan-icd-loader \
+    libva-mesa-driver vulkan-intel vulkan-radeon vulkan-icd-loader libvdpau mesa-vdpau vulkan-swrast \
     vulkan-mesa-layers vulkan-tools \
     # Intel media driver for hardware-accelerated video decoding
     intel-media-driver libva-utils \
     # Gaming deps
     mangohud lib32-mangohud gamescope gamemode lib32-gamemode fuse2 wine-staging \
+    networkmanager bluez ibus lsb-release pciutils xdg-utils file curl bubblewrap \
     # 32-bit libraries
     lib32-glibc lib32-sdl2-compat \
     lib32-freetype2 \
     lib32-libva-intel-driver \
     lib32-libva-mesa-driver \
+    lib32-libvdpau \
+    lib32-vulkan-swrast \
     lib32-mesa-utils \
     lib32-mesa \
     lib32-vulkan-radeon \
@@ -92,9 +97,28 @@ RUN pacman -S --noconfirm --needed \
     lib32-libunwind \
     lib32-renderdoc-minimal \
     # Apps
-    chromium
+    firefox
 
-RUN usermod -aG seat,input appuser
+RUN usermod -aG seat,input,gamemode,video,render appuser
+
+# Install steam
+RUN echo "**** add steam repos ****" && \
+    echo '[jupiter-staging]' >> /etc/pacman.conf && \
+    echo 'Server = https://steamdeck-packages.steamos.cloud/archlinux-mirror/$repo/os/$arch' >> /etc/pacman.conf && \
+    echo 'SigLevel = Never' >> /etc/pacman.conf && \
+    #echo '[holo-staging]' >> /etc/pacman.conf && \
+    #echo 'Server = https://steamdeck-packages.steamos.cloud/archlinux-mirror/$repo/os/$arch' >> /etc/pacman.conf && \
+    pacman -Syyu --noconfirm && \
+    echo "**** install packages ****" && \
+    pacman -Sy --noconfirm --needed \
+    git \
+    jupiter-hw-support \
+    jupiter-legacy-support \
+    noto-fonts-cjk \
+    steam-jupiter-stable \
+    unzip \
+    xdg-user-dirs \
+    zenity
 
 # Expose Sunshine ports (actual mapping happens in docker-compose)
 EXPOSE 5900

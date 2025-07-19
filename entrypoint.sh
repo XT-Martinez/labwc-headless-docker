@@ -22,7 +22,14 @@ sudo -E seatd -u appuser -l debug &
 SEATD_PID=$!
 sleep 0.5
 
-# sudo chmod u+s /usr/bin/bwrap
+sudo chmod u+s /usr/sbin/bwrap
+export STEAM_GAMESCOPE_FANCY_SCALING_SUPPORT=1
+export SRT_URLOPEN_PREFER_STEAM=1
+export QT_IM_MODULE=steam
+export GTK_IM_MODULE=Steam
+
+#ibus-daemon -d -r --panel=disable --emoji-extension=disable &
+#$KB_PID=$!
 
 # --- D-Bus System Bus Setup ---
 echo "Starting D-Bus system bus..."
@@ -45,18 +52,6 @@ echo "D-Bus daemon started with PID $DBUS_PID at ${DBUS_SESSION_BUS_ADDRESS}"
 
 sleep 0.5
 
-# --- Compositor Launch ---
-echo "Starting Labwc (headless)..."
-# labwc reads WLR_BACKENDS from its environment file, no need to set it here again
-# Labwc will run its autostart script, which launches Sunshine
-labwc -m &
-LABWC_PID=$!
-
-# Update D-Bus environment for Wayland applications
-# dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc
-
-sleep 0.5
-
 # --- Audio Setup ---
 export PIPEWIRE_RUNTIME_DIR="$XDG_RUNTIME_DIR"
 # --- Start Pipewire ---
@@ -69,6 +64,17 @@ PULSE_PID=$!
 WP_PID=$!
 echo "Pipewire PIDs: Pipewire=$PIPEWIRE_PID, Pulse=$PULSE_PID, Wireplumber=$WP_PID"
 
+
+# --- Compositor Launch ---
+echo "Starting Labwc (headless)..."
+# labwc reads WLR_BACKENDS from its environment file, no need to set it here again
+# Labwc will run its autostart script, which launches Sunshine
+labwc -m &
+LABWC_PID=$!
+
+# Update D-Bus environment for Wayland applications
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=labwc
+
 sleep 0.5
 
 # Set up the environment for WayVNC
@@ -80,6 +86,7 @@ echo "WayVNC started with PID $WAYVNC_PID"
 # It will capture the headless sway output
 echo "Starting Sunshine..."
 exec /usr/bin/sunshine
+# dbus-run-session -- sunshine
 
 # --- Cleanup on exit ---
 # This part might not run fully if 'exec' is used above,
@@ -94,7 +101,10 @@ cleanup() {
   sudo kill $DBUS_PID || true
   sudo kill $WAYVNC_PID || true
   sudo kill $SEATD_PID || true
+  # sudo kill $BTHD_PID || true
+  # sudo kill $NM_PID || true
   sudo kill $FAKEUDEV_PID || true
+  # sudo kill $KB_PID || true
   echo "Exited."
 }
 

@@ -16,8 +16,8 @@ TARGET_PARENT_DEVICE_NAMES=(
     "Sunshine DualSense (virtual) pad Motion Sensors"
     "Sunshine DualSense (virtual) pad Touchpad"
     "Sunshine PS5 (virtual) pad"
-    "Sunshine PS5 (virtual) pad Motion Sensors"
-    "Sunshine PS5 (virtual) pad Touchpad"
+    # "Sunshine PS5 (virtual) pad Motion Sensors"
+    # "Sunshine PS5 (virtual) pad Touchpad"
     # Makima
     "Makima Virtual Keyboard/Mouse"
 )

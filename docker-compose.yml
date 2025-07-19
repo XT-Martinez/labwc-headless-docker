@@ -1,4 +1,3 @@
-
 services:
   labwc-sunshine:
     build: .
@@ -17,13 +16,13 @@ services:
       - NET_ADMIN
       - SYS_NICE
       - MKNOD
-      # - SYS_ADMIN
+      - SYS_ADMIN
       # - SYS_PTRACE
 
     security_opt:
-     - seccomp:unconfined
+      - seccomp:unconfined
 
-    shm_size: '2gb'
+    shm_size: "2gb"
 
     devices:
       - /dev/dri:/dev/dri
@@ -33,7 +32,7 @@ services:
     tty: true
 
     device_cgroup_rules:
-      - 'c 13:* rwm'  # Input devices (event*, mice, etc.)
+      - "c 13:* rwm" # Input devices (event*, mice, etc.)
       #- 'c 244:* rwm' # Render nodes (DRM) - Changed 'rmw' to 'rwm' for consistency, check if needed
       # - 'c <iio_major>:* rwm' # Add rule for IIO device major number if needed
 
@@ -46,6 +45,7 @@ services:
       - ./config/sfwbar:/home/appuser/.config/sfwbar:z
       - ./config/wireplumber:/home/appuser/.config/wireplumber:z
       - /mnt/DATA/:/mnt/DATA/:z
+      # - /tmp/mysocket:/run/user/1000:z
 
     ports:
       - "5900:5900"
@@ -58,6 +58,8 @@ services:
     environment:
       - ELECTRON_OZONE_PLATFORM_HINT=wayland
       - WLR_RENDERER=gles2
+      - SDL_VIDEODRIVER=x11
+      - MANGOHUD_CONFIG=preset=3
       # - DEBUG=1
 
     user: "1000:1000"

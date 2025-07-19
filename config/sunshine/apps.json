@@ -1,64 +1,72 @@
 {
-    "env": {
-        "PATH": "$(PATH):$(HOME)\/.local\/bin"
+  "env": {
+    "PATH": "$(PATH):$(HOME)\/.local\/bin"
+  },
+  "apps": [
+    {
+      "name": "Desktop",
+      "image-path": "desktop.png"
     },
-    "apps": [
+    {
+      "name": "SteamOS (Gamescope)",
+      "cmd": "sh -c \"gamescope -f --backend sdl --adaptive-sync --mangoapp -W \\\"${SUNSHINE_CLIENT_WIDTH}\\\" -H \\\"${SUNSHINE_CLIENT_HEIGHT}\\\" -r \\\"${SUNSHINE_CLIENT_FPS}\\\" -- steam -bigpicture\"",
+      "exclude-global-prep-cmd": "false",
+      "elevated": "false",
+      "auto-detach": "true",
+      "wait-all": "true",
+      "exit-timeout": "5",
+      "image-path": "steam.png"
+    },
+    {
+      "name": "Desktop - 1.5 Scale",
+      "output": "",
+      "cmd": "",
+      "exclude-global-prep-cmd": "false",
+      "elevated": "false",
+      "auto-detach": "true",
+      "wait-all": "true",
+      "exit-timeout": "5",
+      "prep-cmd": [
         {
-            "name": "Desktop",
-            "image-path": "desktop.png"
-        },
-        {
-            "name": "Desktop - 1.5 Scale",
-            "output": "",
-            "cmd": "",
-            "exclude-global-prep-cmd": "false",
-            "elevated": "false",
-            "auto-detach": "true",
-            "wait-all": "true",
-            "exit-timeout": "5",
-            "prep-cmd": [
-                {
-                    "do": "wlr-randr --output HEADLESS-1 --scale 1.5",
-                    "undo": "wlr-randr --output HEADLESS-1 --scale 1"
-                }
-            ],
-            "image-path": "desktop.png"
-        },
-        {
-            "name": "Desktop - 2.0 Scale",
-            "output": "",
-            "cmd": "",
-            "exclude-global-prep-cmd": "false",
-            "elevated": "false",
-            "auto-detach": "true",
-            "wait-all": "true",
-            "exit-timeout": "5",
-            "prep-cmd": [
-                {
-                    "do": "wlr-randr --output HEADLESS-1 --scale 2",
-                    "undo": "wlr-randr --output HEADLESS-1 --scale 1"
-                }
-            ],
-            "image-path": "desktop.png"
-        },
-        {
-            "name": "Heroic Games Launcher",
-            "output": "",
-            "cmd": "env DISPLAY=: heroic --fullscreen",
-            "exclude-global-prep-cmd": "false",
-            "elevated": "false",
-            "auto-detach": "true",
-            "wait-all": "true",
-            "exit-timeout": "5",
-            "image-path": "Heroic Games Launcher",
-            "working-dir": ""
-        },
-        {
-            "name": "Steam Big Picture",
-            "detached": [
-                "setsid steam steam:\/\/open\/bigpicture"
-            ],
-            "image-path": "steam.png"
+          "do": "wlr-randr --output HEADLESS-1 --scale 1.5",
+          "undo": "wlr-randr --output HEADLESS-1 --scale 1"
         }
-    ]
+      ],
+      "image-path": "desktop.png"
+    },
+    {
+      "name": "Desktop - 2.0 Scale",
+      "output": "",
+      "cmd": "",
+      "exclude-global-prep-cmd": "false",
+      "elevated": "false",
+      "auto-detach": "true",
+      "wait-all": "true",
+      "exit-timeout": "5",
+      "prep-cmd": [
+        {
+          "do": "wlr-randr --output HEADLESS-1 --scale 2",
+          "undo": "wlr-randr --output HEADLESS-1 --scale 1"
+        }
+      ],
+      "image-path": "desktop.png"
+    },
+    {
+      "name": "Heroic Games Launcher",
+      "output": "",
+      "cmd": "sh -c \"gamescope -f --backend sdl --adaptive-sync --mangoapp -W \\\"${SUNSHINE_CLIENT_WIDTH}\\\" -H \\\"${SUNSHINE_CLIENT_HEIGHT}\\\" -r \\\"${SUNSHINE_CLIENT_FPS}\\\" -- heroic --fullscreen\"",
+      "exclude-global-prep-cmd": "false",
+      "elevated": "false",
+      "auto-detach": "true",
+      "wait-all": "true",
+      "exit-timeout": "5",
+      "image-path": "Heroic Games Launcher",
+      "working-dir": ""
+    },
+    {
+      "name": "Steam Big Picture",
+      "cmd": "steam -bigpicture",
+      "image-path": "steam.png"
+    }
+  ]
 }
